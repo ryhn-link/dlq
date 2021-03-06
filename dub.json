@@ -1,0 +1,9 @@
+{
+    "authors": [
+        "Ryhon"
+    ],
+    "copyright": "Copyright © 2021, Ryhon",
+    "description": "D Language Query (Linq port to D)",
+    "license": "LGPL-3.0",
+    "name": "dlq"
+}
