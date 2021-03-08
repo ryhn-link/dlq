@@ -1,17 +1,11 @@
-module app;
+module dlq;
 
-void main()
+unittest
 {
 	import std.stdio;
 	import std.string;
 
-	writeln(["a", "b", "c"].first!(s => s == "b"));
-
-	writeln(["a", "b", "c"].where!(s => s != "a"));
-
-	writeln(["A", "B", "C"].select!(s => s.toLower, string));
-
-	writeln([6, 77, 2, 86, 15, 65].orderBy!(a => a));
+	assert(["a", "b", "c"].first!(s => s == "b") == "b");
 }
 
 import std.exception;
