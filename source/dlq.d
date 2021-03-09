@@ -6,8 +6,8 @@ unittest
 	import std.string;
 
 	assert(["a", "b", "c"].first!(s => s == "b") == "b");
+	assert(["a","a","b","b"].distinct == ["a", "b"]);
 }
-
 import std.exception;
 
 /// Returns the first element in an array that meets the conditionition
@@ -120,7 +120,7 @@ T[] distinct(T)(T[] source)
 	T[] results;
 	foreach (k; source)
 	{
-		if (!k in results)
+		if (!(results.contains(k)))
 			results ~= k;
 	}
 	return results;
