@@ -126,6 +126,12 @@ T[] distinct(T)(T[] source)
 	return results;
 }
 
+/// Check if an array contains an item
+bool contains(T)(T[] source, T item)
+{
+	return source.any!(i => i == item);
+}
+
 /// Returns the largest item in the array
 T max(T)(T[] source)
 {

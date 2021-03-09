@@ -8,6 +8,7 @@ Based on [corefx source code](https://github.com/dotnet/corefx/tree/master/src/S
 - [x] Any  
 - [x] Average  
 - [ ] Cast  
+- [x] Contains
 - [ ] DefaultIfEmpty   
 - [x] Distinct   
 - [ ] Except
@@ -42,7 +43,6 @@ Based on [corefx source code](https://github.com/dotnet/corefx/tree/master/src/S
 ### Won't add
 - Append - D already lets you append arrays using `~=`
 - AsEnumerable - This project only uses arrays
-- Contains - D lets you do that using the `x in y`
 - ElementAt - `[n]` gets the element at n-th position
 - Empty - `[ ]` creates an empty array
 - Reverse - `array` already has a property with the same name that does the same thing 
